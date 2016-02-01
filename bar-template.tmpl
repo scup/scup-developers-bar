@@ -1,0 +1,100 @@
+<style media="screen">
+.scup-developers-bar *{
+  transition: .3s;
+  color: rgb(96, 108, 113);
+}
+
+.scup-developers-bar{
+  width: 100%;
+  position: fixed;
+  height: 55px;
+  background: url({{fullUrl}}img/bg.jpg);
+  background-size: contain;
+  padding: 0px 40px;
+  z-index: 999999999999;
+  transition: 1s;
+  overflow: hidden;
+  border-bottom: 1px solid #f17637;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  top: 0px;
+}
+
+.scup-developers-bar.roll{
+  height: 10px;
+  border-bottom: 15px solid #f17637;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+}
+
+.scup-developers-bar.roll:hover{
+  height: 55px;
+  border-bottom: 1px solid #f17637;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+
+
+.scup-developers-bar .logo {
+    background: url({{fullUrl}}img/logo.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    top: 16px;
+}
+
+.scup-developers-bar .menu-item {
+    display: inline-block;
+    position: relative;
+    top: -19px;
+    margin-left: 50px;
+    font-size: 13px;
+}
+
+.scup-developers-bar .menu-right-item {
+    float: right;
+    position: relative;
+    top: 17px;
+    font-size: 13px;
+    color: #FFF;
+}
+
+.scup-developers-bar .menu-right-item a {
+  color:  #FFF;
+}
+
+.scup-developers-bar.roll .powered-by{
+  opacity: 1;
+}
+
+.scup-developers-bar:hover .powered-by{
+  opacity: 0;
+}
+
+.scup-developers-bar .powered-by{
+  opacity: 0;
+  position: fixed;
+  z-index: 99999999;
+  color: #FFF;
+  top: 1px;
+  font-size: 9px;
+  font-family: sans-serif;
+  letter-spacing: 4px;
+  transition: 0.2s 2s, 0.2s 0s;
+}
+</style>
+
+<div class="powered-by">
+  Project Mantained with ❤ by SCUP|Sprinklr
+</div>
+<a class="logo-link" href="http://developers.scup.com">
+  <div class="logo"></div>
+</a>
+<div class="menu-item">
+  <a href="http://www.github.com/scup/" target="_blank">Open-Source Projects</a>
+</div>
+<div class="menu-item">
+  <a href="http://developers.scup.com/" target="_blank">Blog Posts</a>
+</div>
+<div class="menu-right-item">
+  <a href="http://developers.scup.com/trabalhe-conosco/" target="_blank">Estamos Contratando</a>
+</div>
